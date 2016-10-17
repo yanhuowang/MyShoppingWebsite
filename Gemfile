@@ -35,6 +35,7 @@ gem 'awesome_print'
 gem 'rails-pry'
 gem 'devise'
 gem 'paperclip'
+gem 'faker', '>= 1.2.0'
 
 
 
