@@ -2,7 +2,8 @@
 
 <%= form_for(@item ,  {:url => dashboard_admin_item_path , :method => 'patch'}) do |f| %>
 	Name <%= f.text_field :name %><br/>
-	Price <%= f.number_field :price %>
+	Price <%= f.number_field :price %><br/>
+	Picture <%= f.file_field :cover %><br/>
 	<button type="submit">Submit</button>
 <% end %>
 

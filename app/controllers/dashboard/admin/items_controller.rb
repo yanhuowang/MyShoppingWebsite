@@ -31,7 +31,7 @@ class Dashboard::Admin::ItemsController < Dashboard::Admin::AdminController
 	private
    
     def item_params
-      params.require(:item).permit!
+		params.require(:item).permit!
     end
 
 end

@@ -5,8 +5,8 @@ class Item < ActiveRecord::Base
 	styles: { 
 		original: "1024*1024>",
 		cover: "300x300>", 
-		item: "150x150#" 
+		icon: "150x150#" 
 	}, 
-	default_url: "/images/:style/missing.png"
+	default_url: "/images/missing.png"
 	validates_attachment_content_type :cover, content_type: /\Aimage\/.*\z/
 end

@@ -2343,3 +2343,2034 @@ Processing by Dashboard::Admin::ItemsController#index as HTML
 Completed 200 OK in 28ms (Views: 23.8ms | ActiveRecord: 0.9ms)
 
 
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 14:57:31 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (0.7ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (16.3ms)
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 73ms (Views: 65.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/images/icon/missing.png" for ::1 at 2016-10-17 14:57:31 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/icon/missing.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered collection of /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [80 times] (44.2ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (23.5ms)
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (217.4ms)
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 15:56:19 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (41.6ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (2.2ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (36.5ms)
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 182ms (Views: 102.1ms | ActiveRecord: 46.6ms)
+
+
+Started GET "/images/icon/missing.png" for ::1 at 2016-10-17 15:56:19 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/icon/missing.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered collection of /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [80 times] (46.7ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (179.5ms)
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 15:56:22 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (0.7ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (1.7ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (19.0ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 60ms (Views: 53.0ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/images/icon/missing.png" for ::1 at 2016-10-17 15:56:22 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/icon/missing.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered collection of /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [80 times] (24.4ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (135.3ms)
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 15:57:28 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (0.6ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (22.0ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 105ms (Views: 54.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 15:58:59 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (1.5ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (22.8ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 110ms (Views: 77.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/images/missing.jpg" for ::1 at 2016-10-17 15:59:00 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/missing.jpg"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered collection of /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [80 times] (41.3ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.8ms)
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (168.5ms)
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 15:59:17 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (0.3ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (47.2ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 139ms (Views: 75.2ms | ActiveRecord: 45.9ms)
+
+
+Started GET "/images/missing.jpg" for ::1 at 2016-10-17 15:59:17 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/missing.jpg"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered collection of /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [80 times] (23.6ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (138.6ms)
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 16:00:00 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (0.3ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (15.3ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 53ms (Views: 48.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/images/missing.jpg" for ::1 at 2016-10-17 16:00:00 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/missing.jpg"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered collection of /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [80 times] (25.4ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (144.2ms)
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 16:00:13 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (0.6ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (14.1ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 44ms (Views: 39.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/images/missing.jpg" for ::1 at 2016-10-17 16:00:13 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/missing.jpg"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered collection of /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [80 times] (25.9ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (139.7ms)
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 16:00:15 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (0.8ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (10.8ms)
+  [1m[35m (9.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 43ms (Views: 29.0ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/images/missing.jpg" for ::1 at 2016-10-17 16:00:15 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/images/missing.jpg"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered collection of /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [80 times] (21.5ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (131.6ms)
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 16:03:00 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (3.7ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (1.2ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (47.9ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 139ms (Views: 108.0ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 16:04:39 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (0.6ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (14.7ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 48ms (Views: 41.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/dashboard/admin/items/100/edit" for ::1 at 2016-10-17 16:04:55 -0400
+Processing by Dashboard::Admin::ItemsController#edit as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mManager Load (0.8ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  Rendering dashboard/admin/items/edit.html.erb within layouts/admin
+  Rendered dashboard/admin/items/edit.html.erb within layouts/admin (48.5ms)
+Completed 200 OK in 93ms (Views: 78.7ms | ActiveRecord: 1.1ms)
+
+
+Started PATCH "/dashboard/admin/items/100" for ::1 at 2016-10-17 16:06:26 -0400
+Processing by Dashboard::Admin::ItemsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5nySBq3fk7m1YiQy5Jt4ec43heqh6pL3mNZsLKTcn78Got7/tZZvIsrWIb7Qn+kwhPs71rqDW4KQZ8Q7+GsqHA==", "item"=>{"name"=>"Incredible Cotton Shirt", "price"=>"143", "cover"=>#<ActionDispatch::Http::UploadedFile:0x007fbcb1f00df0 @tempfile=#<Tempfile:/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/RackMultipart20161017-51107-10payjv.jpeg>, @original_filename="shirt.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[cover]\"; filename=\"shirt.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "id"=>"100"}
+  [1m[36mManager Load (1.5ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/c9507f538a6e79c9bd6229981d6e05a320161017-51107-1ere3gh.jpeg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/c9507f538a6e79c9bd6229981d6e05a320161017-51107-18s941q.jpeg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/c9507f538a6e79c9bd6229981d6e05a320161017-51107-18s941q.jpeg[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/c9507f538a6e79c9bd6229981d6e05a320161017-51107-18s941q.jpeg[0]' -auto-orient -resize "1024" '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/f6ee79584141f6282f3c6de21c550aa920161017-51107-p5beid'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/9cc4de9c855dd2913b201985d2d0108f20161017-51107-b330c8[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/9cc4de9c855dd2913b201985d2d0108f20161017-51107-b330c8[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/9cc4de9c855dd2913b201985d2d0108f20161017-51107-b330c8[0]' -auto-orient -resize "300x300>" '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/c0afe11b17b21395a7a1073965d72a2620161017-51107-1d9j33e'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/9cc4de9c855dd2913b201985d2d0108f20161017-51107-b330c8[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/9cc4de9c855dd2913b201985d2d0108f20161017-51107-b330c8[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/9cc4de9c855dd2913b201985d2d0108f20161017-51107-b330c8[0]' -auto-orient -resize "150x" -crop "150x150+0+0" +repage '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/c0afe11b17b21395a7a1073965d72a2620161017-51107-5osqox'
+  [1m[36mCate Load (0.5ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/c9507f538a6e79c9bd6229981d6e05a320161017-51107-nz5rny.jpeg'
+  [1m[35mSQL (14.6ms)[0m  [1m[33mUPDATE `items` SET `cover_file_name` = 'shirt.jpeg', `cover_content_type` = 'image/jpeg', `cover_file_size` = 27893, `cover_updated_at` = '2016-10-17 20:06:26', `updated_at` = '2016-10-17 20:06:28' WHERE `items`.`id` = 100[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/dashboard/admin/items
+Completed 302 Found in 1153ms (ActiveRecord: 29.2ms)
+
+
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 16:06:28 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (0.7ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (27.8ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 108ms (Views: 101.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/system/items/covers/000/000/100/icon/shirt.jpeg?1476734786" for ::1 at 2016-10-17 16:06:28 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/system/items/covers/000/000/100/icon/shirt.jpeg"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered collection of /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [80 times] (44.2ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.4ms)
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.1ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (172.4ms)
+Started GET "/dashboard/admin/items/100/edit" for ::1 at 2016-10-17 16:07:15 -0400
+Processing by Dashboard::Admin::ItemsController#edit as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mManager Load (0.5ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (2.0ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  Rendering dashboard/admin/items/edit.html.erb within layouts/admin
+  Rendered dashboard/admin/items/edit.html.erb within layouts/admin (3.0ms)
+Completed 200 OK in 53ms (Views: 45.2ms | ActiveRecord: 2.5ms)
+
+
+Started PATCH "/dashboard/admin/items/100" for ::1 at 2016-10-17 16:07:21 -0400
+Processing by Dashboard::Admin::ItemsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h1Ue1E50SuGzdpx3L2chXDgVklj6tvhiyFTzDH82KSBni1ItVj22eszCmfsbY7AVctksZOHfMRfA5VsbI4Gcgw==", "item"=>{"name"=>"Incredible Cotton Shirt", "price"=>"143", "cover"=>#<ActionDispatch::Http::UploadedFile:0x007fbcae7e1d10 @tempfile=#<Tempfile:/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/RackMultipart20161017-51107-121or05.jpeg>, @original_filename="shirts.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item[cover]\"; filename=\"shirts.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "id"=>"100"}
+  [1m[36mManager Load (0.3ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-19c1tjz.jpeg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-wh164w.jpeg[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-wh164w.jpeg[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-wh164w.jpeg[0]' -auto-orient -resize "1024" '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/8350c9d76de2c0774fc03432b9942e1e20161017-51107-gc0d43'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/5e0cd1a2bc5fba9ac1c54acd1f27a53820161017-51107-n45h1a[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/5e0cd1a2bc5fba9ac1c54acd1f27a53820161017-51107-n45h1a[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/5e0cd1a2bc5fba9ac1c54acd1f27a53820161017-51107-n45h1a[0]' -auto-orient -resize "300x300>" '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/963cb3f592c9cb572f59f1d8414e9ba120161017-51107-1ash9zv'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/5e0cd1a2bc5fba9ac1c54acd1f27a53820161017-51107-n45h1a[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/5e0cd1a2bc5fba9ac1c54acd1f27a53820161017-51107-n45h1a[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/5e0cd1a2bc5fba9ac1c54acd1f27a53820161017-51107-n45h1a[0]' -auto-orient -resize "150x" -crop "150x150+0+0" +repage '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/963cb3f592c9cb572f59f1d8414e9ba120161017-51107-myc24z'
+  [1m[36mCate Load (0.5ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-p85ut6.jpeg'
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE `items` SET `cover_file_name` = 'shirts.jpeg', `cover_file_size` = 91600, `cover_updated_at` = '2016-10-17 20:07:21', `updated_at` = '2016-10-17 20:07:22' WHERE `items`.`id` = 100[0m
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/original/shirt.jpeg
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/cover/shirt.jpeg
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/item/shirt.jpeg
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/dashboard/admin/items
+Completed 302 Found in 524ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 16:07:22 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (0.7ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (14.4ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 51ms (Views: 45.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/system/items/covers/000/000/100/icon/shirts.jpeg?1476734841" for ::1 at 2016-10-17 16:07:22 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/system/items/covers/000/000/100/icon/shirts.jpeg"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered collection of /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [80 times] (30.9ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (149.7ms)
+Started GET "/dashboard/admin/items/100/edit" for ::1 at 2016-10-17 16:07:37 -0400
+Processing by Dashboard::Admin::ItemsController#edit as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mManager Load (0.3ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  Rendering dashboard/admin/items/edit.html.erb within layouts/admin
+  Rendered dashboard/admin/items/edit.html.erb within layouts/admin (2.5ms)
+Completed 200 OK in 31ms (Views: 26.6ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/dashboard/admin/items/100" for ::1 at 2016-10-17 16:07:43 -0400
+Processing by Dashboard::Admin::ItemsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"m1UDrnwFS7sZOqiJH6TSM5nzhaG+1FgsHHsVELjisEV7i09XZEy3IGaOrQUroEN60z87naW9kVkUyr0H5FUF5g==", "item"=>{"name"=>"Incredible Cotton Shirt", "price"=>"143", "cover"=>#<ActionDispatch::Http::UploadedFile:0x007fbcb1a7e0c0 @tempfile=#<Tempfile:/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/RackMultipart20161017-51107-1qllfaa.png>, @original_filename="shirts.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"item[cover]\"; filename=\"shirts.png\"\r\nContent-Type: image/png\r\n">}, "id"=>"100"}
+  [1m[36mManager Load (0.6ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-154qfcf.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-p4559k.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-p4559k.png[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-p4559k.png[0]' -auto-orient -resize "1024" '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/fb74ef232b02a21496f253f97bf07c1e20161017-51107-1b93kej'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/2d06c7b6efe262d995889e5e20ae795320161017-51107-ucndp6[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/2d06c7b6efe262d995889e5e20ae795320161017-51107-ucndp6[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/2d06c7b6efe262d995889e5e20ae795320161017-51107-ucndp6[0]' -auto-orient -resize "300x300>" '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/777d564309ab4c996c47e60716c023a720161017-51107-1gxjqaw'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/2d06c7b6efe262d995889e5e20ae795320161017-51107-ucndp6[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/2d06c7b6efe262d995889e5e20ae795320161017-51107-ucndp6[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/2d06c7b6efe262d995889e5e20ae795320161017-51107-ucndp6[0]' -auto-orient -resize "150x" -crop "150x150+0+0" +repage '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/777d564309ab4c996c47e60716c023a720161017-51107-c34s1e'
+  [1m[36mCate Load (0.5ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-1btizvx.png'
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE `items` SET `cover_file_name` = 'shirts.png', `cover_updated_at` = '2016-10-17 20:07:43', `updated_at` = '2016-10-17 20:07:43' WHERE `items`.`id` = 100[0m
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/original/shirts.jpeg
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/cover/shirts.jpeg
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/item/shirts.jpeg
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/dashboard/admin/items
+Completed 302 Found in 522ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 16:07:43 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (2.0ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (14.3ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 48ms (Views: 41.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/system/items/covers/000/000/100/icon/shirts.png?1476734863" for ::1 at 2016-10-17 16:07:44 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/system/items/covers/000/000/100/icon/shirts.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered collection of /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [80 times] (44.1ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (168.6ms)
+Started GET "/dashboard/admin/items/100/edit" for ::1 at 2016-10-17 16:08:10 -0400
+Processing by Dashboard::Admin::ItemsController#edit as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mManager Load (0.4ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  Rendering dashboard/admin/items/edit.html.erb within layouts/admin
+  Rendered dashboard/admin/items/edit.html.erb within layouts/admin (2.8ms)
+Completed 200 OK in 46ms (Views: 40.6ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/dashboard/admin/items/100" for ::1 at 2016-10-17 16:08:16 -0400
+Processing by Dashboard::Admin::ItemsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Uxs3Mj2DQoeGztenxBdtbz8ovygfuzFCU/DzI3RBXwKzxXvLJcq+HPl60ivwE/wmdeQBFATS+DdbQVs0KPbqoQ==", "item"=>{"name"=>"Incredible Cotton Shirt", "price"=>"143", "cover"=>#<ActionDispatch::Http::UploadedFile:0x007fbca98968c8 @tempfile=#<Tempfile:/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/RackMultipart20161017-51107-1avhzt0.png>, @original_filename="shirts.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"item[cover]\"; filename=\"shirts.png\"\r\nContent-Type: image/png\r\n">}, "id"=>"100"}
+  [1m[36mManager Load (0.5ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-1gpgxlt.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-1675km2.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-1675km2.png[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-1675km2.png[0]' -auto-orient -resize "1024" '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/391db1bbec230763ebecf34fecad31dc20161017-51107-1hxmlql'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/1725422e4da4252aedb150c8105d935920161017-51107-1dwnkv9[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/1725422e4da4252aedb150c8105d935920161017-51107-1dwnkv9[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/1725422e4da4252aedb150c8105d935920161017-51107-1dwnkv9[0]' -auto-orient -resize "300x300>" '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/359d45decd7a6a0eb4b5555911af21a020161017-51107-qvomh'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/1725422e4da4252aedb150c8105d935920161017-51107-1dwnkv9[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/1725422e4da4252aedb150c8105d935920161017-51107-1dwnkv9[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/1725422e4da4252aedb150c8105d935920161017-51107-1dwnkv9[0]' -auto-orient -resize "150x" -crop "150x150+0+0" +repage '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/359d45decd7a6a0eb4b5555911af21a020161017-51107-pgfb6k'
+  [1m[36mCate Load (0.4ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-lob6a6.png'
+  [1m[35mSQL (2.3ms)[0m  [1m[33mUPDATE `items` SET `cover_updated_at` = '2016-10-17 20:08:16', `updated_at` = '2016-10-17 20:08:17', `cover_file_name` = 'shirts.png' WHERE `items`.`id` = 100[0m
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/original/shirts.png
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/cover/shirts.png
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/item/shirts.png
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/dashboard/admin/items
+Completed 302 Found in 567ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 16:08:17 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (0.4ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (16.5ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 54ms (Views: 47.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/system/items/covers/000/000/100/icon/shirts.png?1476734896" for ::1 at 2016-10-17 16:08:17 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/system/items/covers/000/000/100/icon/shirts.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered collection of /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [80 times] (22.1ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (142.6ms)
+Started GET "/dashboard/admin/items/100/edit" for ::1 at 2016-10-17 16:09:06 -0400
+Processing by Dashboard::Admin::ItemsController#edit as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mManager Load (1.3ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  Rendering dashboard/admin/items/edit.html.erb within layouts/admin
+  Rendered dashboard/admin/items/edit.html.erb within layouts/admin (12.2ms)
+Completed 200 OK in 91ms (Views: 62.4ms | ActiveRecord: 2.3ms)
+
+
+Started PATCH "/dashboard/admin/items/100" for ::1 at 2016-10-17 16:09:12 -0400
+Processing by Dashboard::Admin::ItemsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l8I3UpKFj46tT9n2aHYgOXGPD0woGf6eWjEhnSwjMFF3HHurisxzFdL73HpccrFwO0OxcDNwN+tSgImKcJSF8g==", "item"=>{"name"=>"Incredible Cotton Shirt", "price"=>"143", "cover"=>#<ActionDispatch::Http::UploadedFile:0x007fbcafd653d0 @tempfile=#<Tempfile:/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/RackMultipart20161017-51107-1mx1tj7.png>, @original_filename="missing.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"item[cover]\"; filename=\"missing.png\"\r\nContent-Type: image/png\r\n">}, "id"=>"100"}
+  [1m[36mManager Load (0.6ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ea21841da70e6405af19fabc4ff8bdd920161017-51107-9zj254.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ea21841da70e6405af19fabc4ff8bdd920161017-51107-tq9y50.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ea21841da70e6405af19fabc4ff8bdd920161017-51107-tq9y50.png[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ea21841da70e6405af19fabc4ff8bdd920161017-51107-tq9y50.png[0]' -auto-orient -resize "1024" '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/d0d99e90dd6def516c2d3ed82bc6ce2020161017-51107-1z0s9d3'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/e5e6094762f23cac5cb5cd620d3abb3720161017-51107-rp2nc9[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/e5e6094762f23cac5cb5cd620d3abb3720161017-51107-rp2nc9[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/e5e6094762f23cac5cb5cd620d3abb3720161017-51107-rp2nc9[0]' -auto-orient -resize "300x300>" '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/8c766ae12bbf0e4363c81e7f5cf9b89420161017-51107-163ypfg'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/e5e6094762f23cac5cb5cd620d3abb3720161017-51107-rp2nc9[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/e5e6094762f23cac5cb5cd620d3abb3720161017-51107-rp2nc9[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/e5e6094762f23cac5cb5cd620d3abb3720161017-51107-rp2nc9[0]' -auto-orient -resize "150x" -crop "150x150+0+0" +repage '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/8c766ae12bbf0e4363c81e7f5cf9b89420161017-51107-1ht0aax'
+  [1m[36mCate Load (0.4ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ea21841da70e6405af19fabc4ff8bdd920161017-51107-7xjyqc.png'
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE `items` SET `cover_file_name` = 'missing.png', `cover_content_type` = 'image/png', `cover_file_size` = 459494, `cover_updated_at` = '2016-10-17 20:09:12', `updated_at` = '2016-10-17 20:09:13' WHERE `items`.`id` = 100[0m
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/original/shirts.png
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/cover/shirts.png
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/item/shirts.png
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/dashboard/admin/items
+Completed 302 Found in 1283ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 16:09:13 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (0.6ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (28.9ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 80ms (Views: 72.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/system/items/covers/000/000/100/icon/missing.png?1476734952" for ::1 at 2016-10-17 16:09:13 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/system/items/covers/000/000/100/icon/missing.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered collection of /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [80 times] (34.8ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (163.7ms)
+Started GET "/dashboard/admin/items/100/edit" for ::1 at 2016-10-17 16:12:53 -0400
+Processing by Dashboard::Admin::ItemsController#edit as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mManager Load (0.6ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  Rendering dashboard/admin/items/edit.html.erb within layouts/admin
+  Rendered dashboard/admin/items/edit.html.erb within layouts/admin (1.9ms)
+Completed 200 OK in 61ms (Views: 55.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dashboard/admin/items/100/edit" for ::1 at 2016-10-17 16:14:52 -0400
+Processing by Dashboard::Admin::ItemsController#edit as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mManager Load (0.9ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  Rendering dashboard/admin/items/edit.html.erb within layouts/admin
+  Rendered dashboard/admin/items/edit.html.erb within layouts/admin (2.1ms)
+Completed 200 OK in 39ms (Views: 32.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/system/items/covers/000/000/100/icon/missing.png?1476734952" for ::1 at 2016-10-17 16:14:55 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/system/items/covers/000/000/100/icon/missing.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered collection of /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [80 times] (33.2ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (156.4ms)
+Started GET "/dashboard/admin/items/100/edit" for ::1 at 2016-10-17 16:15:03 -0400
+Processing by Dashboard::Admin::ItemsController#edit as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mManager Load (0.4ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  Rendering dashboard/admin/items/edit.html.erb within layouts/admin
+  Rendered dashboard/admin/items/edit.html.erb within layouts/admin (2.1ms)
+Completed 200 OK in 43ms (Views: 37.9ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/dashboard/admin/items/100" for ::1 at 2016-10-17 16:15:32 -0400
+Processing by Dashboard::Admin::ItemsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KdZk6+XGHHiwMnLgpcLJQYjGbrH2jV/CB8q8zQAerODJCCgS/Y/g48+Gd2yRxlgIwgrQje3klrcPexTaXKkZQw==", "item"=>{"name"=>"Incredible Cotton Shirt", "price"=>"143", "cover"=>#<ActionDispatch::Http::UploadedFile:0x007fbcb0e79608 @tempfile=#<Tempfile:/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/RackMultipart20161017-51107-15laer8.png>, @original_filename="missing.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"item[cover]\"; filename=\"missing.png\"\r\nContent-Type: image/png\r\n">}, "id"=>"100"}
+  [1m[36mManager Load (0.8ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ea21841da70e6405af19fabc4ff8bdd920161017-51107-72waix.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ea21841da70e6405af19fabc4ff8bdd920161017-51107-plgesq.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ea21841da70e6405af19fabc4ff8bdd920161017-51107-plgesq.png[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ea21841da70e6405af19fabc4ff8bdd920161017-51107-plgesq.png[0]' -auto-orient -resize "1024" '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/578d88aa4852537a8a13c87439fb085420161017-51107-sko89t'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/22891782e0eb98705a19fc468e377e4a20161017-51107-lqrqvp[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/22891782e0eb98705a19fc468e377e4a20161017-51107-lqrqvp[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/22891782e0eb98705a19fc468e377e4a20161017-51107-lqrqvp[0]' -auto-orient -resize "300x300>" '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/fd21cdc5fcb5f25c81f512d60542d74b20161017-51107-17lurns'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/22891782e0eb98705a19fc468e377e4a20161017-51107-lqrqvp[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/22891782e0eb98705a19fc468e377e4a20161017-51107-lqrqvp[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/22891782e0eb98705a19fc468e377e4a20161017-51107-lqrqvp[0]' -auto-orient -resize "150x" -crop "150x150+0+0" +repage '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/fd21cdc5fcb5f25c81f512d60542d74b20161017-51107-3jc3dt'
+  [1m[36mCate Load (0.5ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ea21841da70e6405af19fabc4ff8bdd920161017-51107-101eic7.png'
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE `items` SET `cover_updated_at` = '2016-10-17 20:15:32', `updated_at` = '2016-10-17 20:15:33', `cover_file_name` = 'missing.png' WHERE `items`.`id` = 100[0m
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/original/missing.png
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/cover/missing.png
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/item/missing.png
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/dashboard/admin/items
+Completed 302 Found in 1270ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 16:15:33 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (0.5ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (16.5ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 52ms (Views: 45.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/system/items/covers/000/000/100/icon/missing.png?1476735332" for ::1 at 2016-10-17 16:15:33 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/system/items/covers/000/000/100/icon/missing.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered collection of /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [80 times] (29.1ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (154.4ms)
+Started GET "/dashboard/admin/items/100/edit" for ::1 at 2016-10-17 16:17:17 -0400
+Processing by Dashboard::Admin::ItemsController#edit as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mManager Load (0.7ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  Rendering dashboard/admin/items/edit.html.erb within layouts/admin
+  Rendered dashboard/admin/items/edit.html.erb within layouts/admin (2.3ms)
+Completed 200 OK in 69ms (Views: 61.7ms | ActiveRecord: 1.3ms)
+
+
+Started PATCH "/dashboard/admin/items/100" for ::1 at 2016-10-17 16:17:42 -0400
+Processing by Dashboard::Admin::ItemsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"84FwWTeJ1BToCpgbpFr9uw4f81yQMf4id5Njh9LBJ80TXzygL8Aoj5e+nZeQXmzyRNNNYItYN1d/IsuQjnaSbg==", "item"=>{"name"=>"Incredible Cotton Shirt", "price"=>"143", "cover"=>#<ActionDispatch::Http::UploadedFile:0x007fbcad31ae40 @tempfile=#<Tempfile:/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/RackMultipart20161017-51107-1k937nh.png>, @original_filename="missing.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"item[cover]\"; filename=\"missing.png\"\r\nContent-Type: image/png\r\n">}, "id"=>"100"}
+  [1m[36mManager Load (0.3ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ea21841da70e6405af19fabc4ff8bdd920161017-51107-1te08gb.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ea21841da70e6405af19fabc4ff8bdd920161017-51107-7v3mem.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ea21841da70e6405af19fabc4ff8bdd920161017-51107-7v3mem.png[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ea21841da70e6405af19fabc4ff8bdd920161017-51107-7v3mem.png[0]' -auto-orient -resize "1024" '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/3839ffcb148e6f9dbe3c4425d82ffd6520161017-51107-gv82v8'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/9fe2bb551f967a37a783e200beadf44820161017-51107-qt852e[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/9fe2bb551f967a37a783e200beadf44820161017-51107-qt852e[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/9fe2bb551f967a37a783e200beadf44820161017-51107-qt852e[0]' -auto-orient -resize "300x300>" '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/215794925229e9293649a82b7cfb3d4620161017-51107-ouvu3s'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/9fe2bb551f967a37a783e200beadf44820161017-51107-qt852e[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/9fe2bb551f967a37a783e200beadf44820161017-51107-qt852e[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/9fe2bb551f967a37a783e200beadf44820161017-51107-qt852e[0]' -auto-orient -resize "150x" -crop "150x150+0+0" +repage '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/215794925229e9293649a82b7cfb3d4620161017-51107-17jpt0n'
+  [1m[36mCate Load (0.4ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ea21841da70e6405af19fabc4ff8bdd920161017-51107-1nxaei7.png'
+  [1m[35mSQL (2.0ms)[0m  [1m[33mUPDATE `items` SET `cover_updated_at` = '2016-10-17 20:17:42', `updated_at` = '2016-10-17 20:17:43', `cover_file_name` = 'missing.png' WHERE `items`.`id` = 100[0m
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/original/missing.png
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/cover/missing.png
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/item/missing.png
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/dashboard/admin/items
+Completed 302 Found in 1240ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 16:17:43 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (0.4ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (24.6ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 84ms (Views: 78.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/system/items/covers/000/000/100/icon/missing.png?1476735462" for ::1 at 2016-10-17 16:17:43 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/system/items/covers/000/000/100/icon/missing.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered collection of /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [80 times] (21.3ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (136.7ms)
+Started GET "/dashboard/admin/items/100/edit" for ::1 at 2016-10-17 16:32:35 -0400
+Processing by Dashboard::Admin::ItemsController#edit as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mManager Load (1.3ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  Rendering dashboard/admin/items/edit.html.erb within layouts/admin
+  Rendered dashboard/admin/items/edit.html.erb within layouts/admin (6.6ms)
+Completed 200 OK in 83ms (Views: 69.0ms | ActiveRecord: 2.0ms)
+
+
+Started PATCH "/dashboard/admin/items/100" for ::1 at 2016-10-17 16:32:42 -0400
+Processing by Dashboard::Admin::ItemsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZHp7h8qKXThLhEbzQXtXZgE34MbycwehiRoPNpeFuayEpDd+0sOhozQwQ391f8YvS/te+ukaztSBq6chyzIMDw==", "item"=>{"name"=>"Incredible Cotton Shirt", "price"=>"143", "cover"=>#<ActionDispatch::Http::UploadedFile:0x007fbcb32248c8 @tempfile=#<Tempfile:/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/RackMultipart20161017-51107-xn0qo3.png>, @original_filename="shirts.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"item[cover]\"; filename=\"shirts.png\"\r\nContent-Type: image/png\r\n">}, "id"=>"100"}
+  [1m[36mManager Load (0.6ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-92dpul.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-r1p30q.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-r1p30q.png[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-r1p30q.png[0]' -auto-orient -resize "1024" '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/c66c10b42061ac900db25a2729c4685020161017-51107-qlz4wr'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/34bf1978a41d4b80a01093919cd16b8e20161017-51107-1ozgbw0[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/34bf1978a41d4b80a01093919cd16b8e20161017-51107-1ozgbw0[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/34bf1978a41d4b80a01093919cd16b8e20161017-51107-1ozgbw0[0]' -auto-orient -resize "300x300>" '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/b4a9922ccf0f700eaec9d8ed5b1a910420161017-51107-bgiakp'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/34bf1978a41d4b80a01093919cd16b8e20161017-51107-1ozgbw0[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/34bf1978a41d4b80a01093919cd16b8e20161017-51107-1ozgbw0[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/34bf1978a41d4b80a01093919cd16b8e20161017-51107-1ozgbw0[0]' -auto-orient -resize "150x" -crop "150x150+0+0" +repage '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/b4a9922ccf0f700eaec9d8ed5b1a910420161017-51107-hc9syb'
+  [1m[36mCate Load (0.7ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-14y5wz8.png'
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE `items` SET `cover_file_name` = 'shirts.png', `cover_content_type` = 'image/jpeg', `cover_file_size` = 91600, `cover_updated_at` = '2016-10-17 20:32:42', `updated_at` = '2016-10-17 20:32:43' WHERE `items`.`id` = 100[0m
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/original/missing.png
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/cover/missing.png
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/item/missing.png
+  [1m[35m (22.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/dashboard/admin/items
+Completed 302 Found in 599ms (ActiveRecord: 25.5ms)
+
+
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 16:32:43 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (0.5ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (29.2ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 68ms (Views: 58.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/system/items/covers/000/000/100/icon/shirts.png?1476736362" for ::1 at 2016-10-17 16:32:43 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/system/items/covers/000/000/100/icon/shirts.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered collection of /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [80 times] (29.0ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (144.8ms)
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 16:45:01 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (43.1ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (3.0ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (39.7ms)
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 270ms (Views: 187.4ms | ActiveRecord: 49.4ms)
+
+
+Started GET "/system/items/covers/000/000/100/icon/shirts.png?1476736362" for ::1 at 2016-10-17 16:45:01 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/system/items/covers/000/000/100/icon/shirts.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered collection of /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [80 times] (62.5ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.3ms)
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.9ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (282.4ms)
+Started GET "/dashboard/admin/items/100/edit" for ::1 at 2016-10-17 16:45:04 -0400
+Processing by Dashboard::Admin::ItemsController#edit as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mManager Load (0.5ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  Rendering dashboard/admin/items/edit.html.erb within layouts/admin
+  Rendered dashboard/admin/items/edit.html.erb within layouts/admin (5.8ms)
+Completed 200 OK in 53ms (Views: 31.3ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/dashboard/admin/items/100" for ::1 at 2016-10-17 16:45:12 -0400
+Processing by Dashboard::Admin::ItemsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sVoTZFzzZyVyaIYUDjq6ipD3R7xrAoJVQh9mYMEYraBRhF+dRLqbvg3cg5g6PivD2jv5gHBrSyBKrs53na8YAw==", "item"=>{"name"=>"Incredible Cotton Shirt", "price"=>"143", "cover"=>#<ActionDispatch::Http::UploadedFile:0x007fbcb33ad348 @tempfile=#<Tempfile:/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/RackMultipart20161017-51107-1d1a3rf.png>, @original_filename="shirts.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"item[cover]\"; filename=\"shirts.png\"\r\nContent-Type: image/png\r\n">}, "id"=>"100"}
+  [1m[36mManager Load (0.5ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-8nyh4y.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-hlnisu.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-hlnisu.png[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-hlnisu.png[0]' -auto-orient -resize "1024" '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/99f27a13ecbf81cf4f2159f4f383cb8a20161017-51107-1xuklce'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/dea6c7b6f47d8437eb0641fa7066d02620161017-51107-17sdeoc[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/dea6c7b6f47d8437eb0641fa7066d02620161017-51107-17sdeoc[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/dea6c7b6f47d8437eb0641fa7066d02620161017-51107-17sdeoc[0]' -auto-orient -resize "300x300>" '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/182a52b3ef331d1c6e2e855bb5183fa020161017-51107-11v7n6c'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/dea6c7b6f47d8437eb0641fa7066d02620161017-51107-17sdeoc[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/dea6c7b6f47d8437eb0641fa7066d02620161017-51107-17sdeoc[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/dea6c7b6f47d8437eb0641fa7066d02620161017-51107-17sdeoc[0]' -auto-orient -resize "150x" -crop "150x150+0+0" +repage '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/182a52b3ef331d1c6e2e855bb5183fa020161017-51107-1lbt5q9'
+  [1m[36mCate Load (0.5ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-17qvi5y.png'
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE `items` SET `cover_updated_at` = '2016-10-17 20:45:12', `updated_at` = '2016-10-17 20:45:13', `cover_file_name` = 'shirts.png' WHERE `items`.`id` = 100[0m
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/original/shirts.png
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/cover/shirts.png
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/item/shirts.png
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/dashboard/admin/items
+Completed 302 Found in 1126ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 16:45:13 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (0.5ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (18.7ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 53ms (Views: 47.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/system/items/covers/000/000/100/icon/shirts.png?1476737112" for ::1 at 2016-10-17 16:45:13 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/system/items/covers/000/000/100/icon/shirts.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered collection of /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [80 times] (27.4ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (143.6ms)
+Started GET "/dashboard/admin/items/100/edit" for ::1 at 2016-10-17 16:45:56 -0400
+Processing by Dashboard::Admin::ItemsController#edit as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mManager Load (0.6ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  Rendering dashboard/admin/items/edit.html.erb within layouts/admin
+  Rendered dashboard/admin/items/edit.html.erb within layouts/admin (2.0ms)
+Completed 200 OK in 37ms (Views: 30.2ms | ActiveRecord: 1.1ms)
+
+
+Started PATCH "/dashboard/admin/items/100" for ::1 at 2016-10-17 16:46:02 -0400
+Processing by Dashboard::Admin::ItemsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W5rYWfW7KRMPrZhlyFzTxb811L+Fl43sKla0hXJMWge7RJSg7fLViHAZnen8WEKM9flqg57+RJki5xySLvvvpA==", "item"=>{"name"=>"Incredible Cotton Shirt", "price"=>"143", "cover"=>#<ActionDispatch::Http::UploadedFile:0x007fbcafd2bce8 @tempfile=#<Tempfile:/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/RackMultipart20161017-51107-ci0vs0.png>, @original_filename="missing.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"item[cover]\"; filename=\"missing.png\"\r\nContent-Type: image/png\r\n">}, "id"=>"100"}
+  [1m[36mManager Load (0.4ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ea21841da70e6405af19fabc4ff8bdd920161017-51107-mqdnvj.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ea21841da70e6405af19fabc4ff8bdd920161017-51107-k4xkju.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ea21841da70e6405af19fabc4ff8bdd920161017-51107-k4xkju.png[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ea21841da70e6405af19fabc4ff8bdd920161017-51107-k4xkju.png[0]' -auto-orient -resize "1024" '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/28862c1636999de3f13f317205602d7e20161017-51107-ato27'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/f9402a11d7e6ac08364b41f323915f1720161017-51107-gon8t6[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/f9402a11d7e6ac08364b41f323915f1720161017-51107-gon8t6[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/f9402a11d7e6ac08364b41f323915f1720161017-51107-gon8t6[0]' -auto-orient -resize "300x300>" '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/4d58069d40d8a15d80430e266b8884e120161017-51107-cbpytl'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/f9402a11d7e6ac08364b41f323915f1720161017-51107-gon8t6[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/f9402a11d7e6ac08364b41f323915f1720161017-51107-gon8t6[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/f9402a11d7e6ac08364b41f323915f1720161017-51107-gon8t6[0]' -auto-orient -resize "150x" -crop "150x150+0+0" +repage '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/4d58069d40d8a15d80430e266b8884e120161017-51107-kpj38s'
+  [1m[36mCate Load (0.4ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ea21841da70e6405af19fabc4ff8bdd920161017-51107-10a9lw.png'
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE `items` SET `cover_file_name` = 'missing.png', `cover_content_type` = 'image/png', `cover_file_size` = 459494, `cover_updated_at` = '2016-10-17 20:46:02', `updated_at` = '2016-10-17 20:46:04' WHERE `items`.`id` = 100[0m
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/original/shirts.png
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/cover/shirts.png
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/item/shirts.png
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/dashboard/admin/items
+Completed 302 Found in 1256ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 16:46:04 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (0.3ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (21.5ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 60ms (Views: 53.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/system/items/covers/000/000/100/icon/missing.png?1476737162" for ::1 at 2016-10-17 16:46:04 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/system/items/covers/000/000/100/icon/missing.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered collection of /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [80 times] (28.5ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (144.3ms)
+Started GET "/dashboard/admin/items/100/edit" for ::1 at 2016-10-17 16:48:24 -0400
+Processing by Dashboard::Admin::ItemsController#edit as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mManager Load (1.9ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  Rendering dashboard/admin/items/edit.html.erb within layouts/admin
+  Rendered dashboard/admin/items/edit.html.erb within layouts/admin (11.9ms)
+Completed 200 OK in 109ms (Views: 76.2ms | ActiveRecord: 2.4ms)
+
+
+Started PATCH "/dashboard/admin/items/100" for ::1 at 2016-10-17 16:48:39 -0400
+Processing by Dashboard::Admin::ItemsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bzk6PKfkGffxdTlSXFlMglHecapNvXfGz09l+5ts8MuP53bFv63lbI7BPN5oXd3LGxLPllbUvrPH/s3sx9tFaA==", "item"=>{"name"=>"Incredible Cotton Shirt", "price"=>"143", "cover"=>#<ActionDispatch::Http::UploadedFile:0x007fbcb1ea9a50 @tempfile=#<Tempfile:/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/RackMultipart20161017-51107-zg2mcd.png>, @original_filename="missing.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"item[cover]\"; filename=\"missing.png\"\r\nContent-Type: image/png\r\n">}, "id"=>"100"}
+  [1m[36mManager Load (0.7ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ea21841da70e6405af19fabc4ff8bdd920161017-51107-18gdqbo.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ea21841da70e6405af19fabc4ff8bdd920161017-51107-lcw65.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ea21841da70e6405af19fabc4ff8bdd920161017-51107-lcw65.png[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ea21841da70e6405af19fabc4ff8bdd920161017-51107-lcw65.png[0]' -auto-orient -resize "1024" '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/75cce1e688636921829f72f0025f080b20161017-51107-1uqxze9'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/bc2b8d3ad4e84ae7e50463434577dffa20161017-51107-6xq71u[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/bc2b8d3ad4e84ae7e50463434577dffa20161017-51107-6xq71u[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/bc2b8d3ad4e84ae7e50463434577dffa20161017-51107-6xq71u[0]' -auto-orient -resize "300x300>" '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/a24f5bcdcad1e3e9e6f54e425113cf4f20161017-51107-1a83vy0'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/bc2b8d3ad4e84ae7e50463434577dffa20161017-51107-6xq71u[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/bc2b8d3ad4e84ae7e50463434577dffa20161017-51107-6xq71u[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/bc2b8d3ad4e84ae7e50463434577dffa20161017-51107-6xq71u[0]' -auto-orient -resize "150x" -crop "150x150+0+0" +repage '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/a24f5bcdcad1e3e9e6f54e425113cf4f20161017-51107-nrcmr3'
+  [1m[36mCate Load (0.5ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ea21841da70e6405af19fabc4ff8bdd920161017-51107-4vf8hn.png'
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE `items` SET `cover_updated_at` = '2016-10-17 20:48:39', `updated_at` = '2016-10-17 20:48:40', `cover_file_name` = 'missing.png' WHERE `items`.`id` = 100[0m
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/original/missing.png
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/cover/missing.png
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/item/missing.png
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/dashboard/admin/items
+Completed 302 Found in 1288ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 16:48:40 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (0.9ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (15.2ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 49ms (Views: 40.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/system/items/covers/000/000/100/icon/missing.png?1476737319" for ::1 at 2016-10-17 16:48:40 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/system/items/covers/000/000/100/icon/missing.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered collection of /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [80 times] (26.5ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (246.8ms)
+Started GET "/dashboard/admin/items/100/edit" for ::1 at 2016-10-17 16:49:20 -0400
+Processing by Dashboard::Admin::ItemsController#edit as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mManager Load (0.5ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  Rendering dashboard/admin/items/edit.html.erb within layouts/admin
+  Rendered dashboard/admin/items/edit.html.erb within layouts/admin (2.9ms)
+Completed 200 OK in 94ms (Views: 88.4ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/dashboard/admin/items/100" for ::1 at 2016-10-17 16:49:30 -0400
+Processing by Dashboard::Admin::ItemsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eCnWkPxYpOb2r4D2R+Nd4iSiPxFutC1tMr2istRvaCiY95pp5BFYfYkbhXpz58yrbm6BLXXd5Bg6DAqliNjdiw==", "item"=>{"name"=>"Incredible Cotton Shirt", "price"=>"143", "cover"=>#<ActionDispatch::Http::UploadedFile:0x007fbcb1be6d18 @tempfile=#<Tempfile:/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/RackMultipart20161017-51107-72qvs.png>, @original_filename="shirts.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"item[cover]\"; filename=\"shirts.png\"\r\nContent-Type: image/png\r\n">}, "id"=>"100"}
+  [1m[36mManager Load (0.3ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-2eo1oj.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-g1j1rg.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-g1j1rg.png[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-g1j1rg.png[0]' -auto-orient -resize "1024" '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/a233e15900f2711e00936d116529c49720161017-51107-d2ix6z'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/0cef22782eaf38553ce83131bbb022e120161017-51107-1vglzjy[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/0cef22782eaf38553ce83131bbb022e120161017-51107-1vglzjy[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/0cef22782eaf38553ce83131bbb022e120161017-51107-1vglzjy[0]' -auto-orient -resize "300x300>" '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/31082a87360aff74b5522f3fd20083f020161017-51107-1kw4nf5'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/0cef22782eaf38553ce83131bbb022e120161017-51107-1vglzjy[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/0cef22782eaf38553ce83131bbb022e120161017-51107-1vglzjy[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/0cef22782eaf38553ce83131bbb022e120161017-51107-1vglzjy[0]' -auto-orient -resize "150x" -crop "150x150+0+0" +repage '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/31082a87360aff74b5522f3fd20083f020161017-51107-1w5x144'
+  [1m[36mCate Load (0.5ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-ox9sb7.png'
+  [1m[35mSQL (1.8ms)[0m  [1m[33mUPDATE `items` SET `cover_file_name` = 'shirts.png', `cover_content_type` = 'image/jpeg', `cover_file_size` = 91600, `cover_updated_at` = '2016-10-17 20:49:30', `updated_at` = '2016-10-17 20:49:31' WHERE `items`.`id` = 100[0m
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/original/missing.png
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/cover/missing.png
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/item/missing.png
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/dashboard/admin/items
+Completed 302 Found in 566ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 16:49:31 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (0.3ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (19.0ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 56ms (Views: 51.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/system/items/covers/000/000/100/icon/shirts.png?1476737370" for ::1 at 2016-10-17 16:49:31 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/system/items/covers/000/000/100/icon/shirts.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered collection of /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [80 times] (27.9ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (141.8ms)
+Started GET "/dashboard/admin/items/100/edit" for ::1 at 2016-10-17 16:52:03 -0400
+Processing by Dashboard::Admin::ItemsController#edit as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mManager Load (0.6ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  Rendering dashboard/admin/items/edit.html.erb within layouts/admin
+  Rendered dashboard/admin/items/edit.html.erb within layouts/admin (2.1ms)
+Completed 200 OK in 47ms (Views: 39.5ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/dashboard/admin/items/100" for ::1 at 2016-10-17 16:52:09 -0400
+Processing by Dashboard::Admin::ItemsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oy+itXeSFpFvCp2k5YkeQYvpXN0LC+xEsTwQf/u6mYBD8e5Mb9vqChC+mCjRjY8IwSXi4RBiJTG5jbhopw0sIw==", "item"=>{"name"=>"Incredible Cotton Shirt", "price"=>"145"}, "id"=>"100"}
+  [1m[36mManager Load (0.3ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCate Load (0.4ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE `items` SET `price` = 145, `updated_at` = '2016-10-17 20:52:09' WHERE `items`.`id` = 100[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/dashboard/admin/items
+Completed 302 Found in 9ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 16:52:09 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (0.3ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (14.2ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 41ms (Views: 37.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/system/items/covers/000/000/100/icon/shirts.png?1476737370" for ::1 at 2016-10-17 16:52:09 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/system/items/covers/000/000/100/icon/shirts.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered collection of /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [80 times] (22.6ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (134.1ms)
+Started GET "/dashboard/admin/items/100/edit" for ::1 at 2016-10-17 16:52:10 -0400
+Processing by Dashboard::Admin::ItemsController#edit as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mManager Load (0.3ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  Rendering dashboard/admin/items/edit.html.erb within layouts/admin
+  Rendered dashboard/admin/items/edit.html.erb within layouts/admin (1.7ms)
+Completed 200 OK in 28ms (Views: 24.0ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/dashboard/admin/items/100" for ::1 at 2016-10-17 16:52:23 -0400
+Processing by Dashboard::Admin::ItemsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GPOdVXmh9EXQzsVcc7WuuYGiU6ndZsnyRuR1/cgJoN74LdGsYegI3q96wNBHsT/wy27tlcYPAIdOVd3qlL4VfQ==", "item"=>{"name"=>"Incredible Cotton Shirt", "price"=>"145", "cover"=>#<ActionDispatch::Http::UploadedFile:0x007fbcb34b5c90 @tempfile=#<Tempfile:/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/RackMultipart20161017-51107-z8ympk.png>, @original_filename="apple-touch-icon.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"item[cover]\"; filename=\"apple-touch-icon.png\"\r\nContent-Type: image/png\r\n">}, "id"=>"100"}
+  [1m[36mManager Load (0.3ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/129d018a2bedce166915bb1b71bf8cfd20161017-51107-2x2div.png'
+[paperclip] Content Type Spoof: Filename apple-touch-icon.png (inode/x-empty from Headers, ["image/png"] from Extension), content type discovered from file command: application/x-empty. See documentation to allow this combination.
+  [1m[36mCate Load (0.3ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/129d018a2bedce166915bb1b71bf8cfd20161017-51107-1hyv545.png'
+[paperclip] Content Type Spoof: Filename apple-touch-icon.png (inode/x-empty from Headers, ["image/png"] from Extension), content type discovered from file command: application/x-empty. See documentation to allow this combination.
+  [1m[35m (1.2ms)[0m  [1m[31mROLLBACK[0m
+Redirected to http://localhost:3000/dashboard/admin/items
+Completed 302 Found in 41ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 16:52:23 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (0.3ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (37.0ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 72ms (Views: 67.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/system/items/covers/000/000/100/icon/shirts.png?1476737370" for ::1 at 2016-10-17 16:52:23 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/system/items/covers/000/000/100/icon/shirts.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered collection of /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [80 times] (22.9ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (131.5ms)
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 17:04:45 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (1.2ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (36.9ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 148ms (Views: 99.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/system/items/covers/000/000/100/icon/shirts.png?1476737370" for ::1 at 2016-10-17 17:04:46 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/system/items/covers/000/000/100/icon/shirts.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered collection of /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [80 times] (26.3ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (136.4ms)
+Started GET "/dashboard/admin/items/100/edit" for ::1 at 2016-10-17 17:04:49 -0400
+Processing by Dashboard::Admin::ItemsController#edit as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mManager Load (0.7ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (9.1ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  Rendering dashboard/admin/items/edit.html.erb within layouts/admin
+  Rendered dashboard/admin/items/edit.html.erb within layouts/admin (2.7ms)
+Completed 200 OK in 41ms (Views: 24.7ms | ActiveRecord: 9.8ms)
+
+
+Started PATCH "/dashboard/admin/items/100" for ::1 at 2016-10-17 17:04:55 -0400
+Processing by Dashboard::Admin::ItemsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sqONv/K4dotYhQcsKGJDkISvV3ZHDj9zfAKi5m3AqKdSfcFG6vGKECcxAqAcZtLZzmPpSlxn9gZ0swrxMXcdBA==", "item"=>{"name"=>"Incredible Cotton Shirt", "price"=>"145", "cover"=>#<ActionDispatch::Http::UploadedFile:0x007fbcb29cb370 @tempfile=#<Tempfile:/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/RackMultipart20161017-51107-nihw4k.png>, @original_filename="shirts.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"item[cover]\"; filename=\"shirts.png\"\r\nContent-Type: image/png\r\n">}, "id"=>"100"}
+  [1m[36mManager Load (0.5ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+Unpermitted parameters: name, price
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-gnxdn.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-1cri077.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-1cri077.png[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-1cri077.png[0]' -auto-orient -resize "1024" '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/a69f9ad507c00d1511cbbe0d165fe78720161017-51107-z8c8s'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/c8486c6d57a065c71b5552b337365a3420161017-51107-9tj69j[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/c8486c6d57a065c71b5552b337365a3420161017-51107-9tj69j[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/c8486c6d57a065c71b5552b337365a3420161017-51107-9tj69j[0]' -auto-orient -resize "300x300>" '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ce9b63130aa91d9e4c77999fe36df67920161017-51107-1p7ufwo'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/c8486c6d57a065c71b5552b337365a3420161017-51107-9tj69j[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/c8486c6d57a065c71b5552b337365a3420161017-51107-9tj69j[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/c8486c6d57a065c71b5552b337365a3420161017-51107-9tj69j[0]' -auto-orient -resize "150x" -crop "150x150+0+0" +repage '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ce9b63130aa91d9e4c77999fe36df67920161017-51107-ds3yoh'
+  [1m[36mCate Load (0.4ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-1tmunm4.png'
+  [1m[35mSQL (2.0ms)[0m  [1m[33mUPDATE `items` SET `cover_updated_at` = '2016-10-17 21:04:55', `updated_at` = '2016-10-17 21:04:56', `cover_file_name` = 'shirts.png' WHERE `items`.`id` = 100[0m
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/original/shirts.png
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/cover/shirts.png
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/item/shirts.png
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/dashboard/admin/items
+Completed 302 Found in 623ms (ActiveRecord: 34.9ms)
+
+
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 17:04:56 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (0.3ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (36.9ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 72ms (Views: 67.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/system/items/covers/000/000/100/icon/shirts.png?1476738295" for ::1 at 2016-10-17 17:04:56 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/system/items/covers/000/000/100/icon/shirts.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered collection of /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [80 times] (25.0ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (138.6ms)
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 17:12:10 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (1.1ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (34.8ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 129ms (Views: 99.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/system/items/covers/000/000/100/icon/shirts.png?1476738295" for ::1 at 2016-10-17 17:12:10 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/system/items/covers/000/000/100/icon/shirts.png"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered collection of /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [80 times] (32.6ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.3ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (175.5ms)
+Started GET "/dashboard/admin/items/100/edit" for ::1 at 2016-10-17 17:12:14 -0400
+Processing by Dashboard::Admin::ItemsController#edit as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mManager Load (0.6ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  Rendering dashboard/admin/items/edit.html.erb within layouts/admin
+  Rendered dashboard/admin/items/edit.html.erb within layouts/admin (3.2ms)
+Completed 200 OK in 40ms (Views: 26.9ms | ActiveRecord: 1.1ms)
+
+
+Started PATCH "/dashboard/admin/items/100" for ::1 at 2016-10-17 17:12:23 -0400
+Processing by Dashboard::Admin::ItemsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OJVCm6kfqZAjCel+1gpY/u6+aafrxzdLeob5gXAFOZbYSw5isVZVC1y97PLiDsm3pHLXm/Cu/j5yN1GWLLKMNQ==", "item"=>{"name"=>"Incredible Cotton Shirt", "price"=>"145", "cover"=>#<ActionDispatch::Http::UploadedFile:0x007fbcb0e7a828 @tempfile=#<Tempfile:/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/RackMultipart20161017-51107-nxxk5k.png>, @original_filename="shirts.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"item[cover]\"; filename=\"shirts.png\"\r\nContent-Type: image/png\r\n">}, "id"=>"100"}
+  [1m[36mManager Load (0.3ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-1gkmfur.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-10u4j8n.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-10u4j8n.png[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-10u4j8n.png[0]' -auto-orient -resize "1024" '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/804d838011927718064eee9fe372495a20161017-51107-1pu696s'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/0254d542b205a19008002a7317d9d0b520161017-51107-1qsw8xq[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/0254d542b205a19008002a7317d9d0b520161017-51107-1qsw8xq[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/0254d542b205a19008002a7317d9d0b520161017-51107-1qsw8xq[0]' -auto-orient -resize "300x300>" '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/684316bfaf124803ad4f340db2cff52520161017-51107-15bua3d'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/0254d542b205a19008002a7317d9d0b520161017-51107-1qsw8xq[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/0254d542b205a19008002a7317d9d0b520161017-51107-1qsw8xq[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/0254d542b205a19008002a7317d9d0b520161017-51107-1qsw8xq[0]' -auto-orient -resize "150x" -crop "150x150+0+0" +repage '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/684316bfaf124803ad4f340db2cff52520161017-51107-1mszsj1'
+  [1m[36mCate Load (0.7ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-wyr5s9.png'
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE `items` SET `cover_updated_at` = '2016-10-17 21:12:23', `updated_at` = '2016-10-17 21:12:23', `cover_file_name` = 'shirts.png' WHERE `items`.`id` = 100[0m
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/original/shirts.png
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/cover/shirts.png
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/dashboard/admin/items
+Completed 302 Found in 575ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 17:12:23 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (0.5ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (17.2ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 54ms (Views: 48.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/dashboard/admin/items/100/edit" for ::1 at 2016-10-17 17:12:29 -0400
+Processing by Dashboard::Admin::ItemsController#edit as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mManager Load (0.5ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  Rendering dashboard/admin/items/edit.html.erb within layouts/admin
+  Rendered dashboard/admin/items/edit.html.erb within layouts/admin (2.3ms)
+Completed 200 OK in 32ms (Views: 26.9ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/dashboard/admin/items/100" for ::1 at 2016-10-17 17:12:39 -0400
+Processing by Dashboard::Admin::ItemsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pNIx3gw7Bfu91TpdzzwUfTeKSmeamtopTV2nz9vIS5xEDH0nFHL5YMJhP9H7OIU0fUb0W4HzE1xF7A/Yh3/+Pw==", "item"=>{"name"=>"Incredible Cotton Shirt", "price"=>"145", "cover"=>#<ActionDispatch::Http::UploadedFile:0x007fbcafbfbe68 @tempfile=#<Tempfile:/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/RackMultipart20161017-51107-15plz98.png>, @original_filename="missing.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"item[cover]\"; filename=\"missing.png\"\r\nContent-Type: image/png\r\n">}, "id"=>"100"}
+  [1m[36mManager Load (0.8ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ea21841da70e6405af19fabc4ff8bdd920161017-51107-1nq4sc3.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ea21841da70e6405af19fabc4ff8bdd920161017-51107-1lr7iga.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ea21841da70e6405af19fabc4ff8bdd920161017-51107-1lr7iga.png[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ea21841da70e6405af19fabc4ff8bdd920161017-51107-1lr7iga.png[0]' -auto-orient -resize "1024" '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/35091177cc67b5cd4b8d7051e22c23a020161017-51107-1o4kqch'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/49826088736461f88f9feff20b6a563e20161017-51107-apy03d[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/49826088736461f88f9feff20b6a563e20161017-51107-apy03d[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/49826088736461f88f9feff20b6a563e20161017-51107-apy03d[0]' -auto-orient -resize "300x300>" '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/53660990b468feb2d0bdc0499749637620161017-51107-i0gdiz'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/49826088736461f88f9feff20b6a563e20161017-51107-apy03d[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/49826088736461f88f9feff20b6a563e20161017-51107-apy03d[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/49826088736461f88f9feff20b6a563e20161017-51107-apy03d[0]' -auto-orient -resize "150x" -crop "150x150+0+0" +repage '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/53660990b468feb2d0bdc0499749637620161017-51107-1cmo5s3'
+  [1m[36mCate Load (0.5ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ea21841da70e6405af19fabc4ff8bdd920161017-51107-ai32zh.png'
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE `items` SET `cover_file_name` = 'missing.png', `cover_content_type` = 'image/png', `cover_file_size` = 459494, `cover_updated_at` = '2016-10-17 21:12:39', `updated_at` = '2016-10-17 21:12:40' WHERE `items`.`id` = 100[0m
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/original/shirts.png
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/cover/shirts.png
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/icon/shirts.png
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/dashboard/admin/items
+Completed 302 Found in 1241ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 17:12:40 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (0.4ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (18.7ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 54ms (Views: 48.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dashboard/admin/items/100/edit" for ::1 at 2016-10-17 17:12:45 -0400
+Processing by Dashboard::Admin::ItemsController#edit as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mManager Load (0.3ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  Rendering dashboard/admin/items/edit.html.erb within layouts/admin
+  Rendered dashboard/admin/items/edit.html.erb within layouts/admin (2.0ms)
+Completed 200 OK in 32ms (Views: 28.6ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/dashboard/admin/items/100" for ::1 at 2016-10-17 17:13:02 -0400
+Processing by Dashboard::Admin::ItemsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LasYb1o7FwC0sGas8QGvpZ56M+tGODn5w2QZT3Hb+J7NdVSWQnLrm8sEYyDFBT7s1LaN111R8IzL1bFYLWxNPQ==", "item"=>{"name"=>"Incredible Cotton Shirt", "price"=>"145", "cover"=>#<ActionDispatch::Http::UploadedFile:0x007fbcae2389e0 @tempfile=#<Tempfile:/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/RackMultipart20161017-51107-1515ewj.png>, @original_filename="shirts.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"item[cover]\"; filename=\"shirts.png\"\r\nContent-Type: image/png\r\n">}, "id"=>"100"}
+  [1m[36mManager Load (0.3ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-4ocy2u.png'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-1jzt0va.png[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-1jzt0va.png[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-1jzt0va.png[0]' -auto-orient -resize "1024" '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/ced7907c47bcb18eecaf313d1374de3020161017-51107-kl0akq'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/aa1042e8fa7cb6f13e44535fd5276fe520161017-51107-ya92sm[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/aa1042e8fa7cb6f13e44535fd5276fe520161017-51107-ya92sm[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/aa1042e8fa7cb6f13e44535fd5276fe520161017-51107-ya92sm[0]' -auto-orient -resize "300x300>" '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/d191683db5e4ec6d45cce16acdb7ad7a20161017-51107-znqjqt'
+Command :: identify -format '%wx%h,%[exif:orientation]' '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/aa1042e8fa7cb6f13e44535fd5276fe520161017-51107-ya92sm[0]' 2>/dev/null
+Command :: identify -format %m '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/aa1042e8fa7cb6f13e44535fd5276fe520161017-51107-ya92sm[0]'
+Command :: convert '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/aa1042e8fa7cb6f13e44535fd5276fe520161017-51107-ya92sm[0]' -auto-orient -resize "150x" -crop "150x150+0+0" +repage '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/d191683db5e4ec6d45cce16acdb7ad7a20161017-51107-jqw67k'
+  [1m[36mCate Load (0.8ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m
+Command :: file -b --mime '/var/folders/mc/qqv4d2gj7pv2hz473xs0rf9c0000gn/T/514ca2b2d46ccf671c520abf4ab249a520161017-51107-umjva7.png'
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE `items` SET `cover_file_name` = 'shirts.png', `cover_content_type` = 'image/jpeg', `cover_file_size` = 91600, `cover_updated_at` = '2016-10-17 21:13:02', `updated_at` = '2016-10-17 21:13:03' WHERE `items`.`id` = 100[0m
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/original/missing.png
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/cover/missing.png
+[paperclip] deleting /Users/yanhuo/Desktop/ShopWeb/public/system/items/covers/000/000/100/icon/missing.png
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/dashboard/admin/items
+Completed 302 Found in 527ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 17:13:03 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (0.4ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (18.8ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 52ms (Views: 46.4ms | ActiveRecord: 1.0ms)
+
+
