@@ -4374,3 +4374,99 @@ Processing by Dashboard::Admin::ItemsController#index as HTML
 Completed 200 OK in 52ms (Views: 46.4ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 17:20:45 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (0.4ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (47.6ms)
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 1703ms (Views: 1623.5ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/dashboard/admin/items/100/edit" for ::1 at 2016-10-17 17:20:48 -0400
+Processing by Dashboard::Admin::ItemsController#edit as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mManager Load (0.4ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  Rendering dashboard/admin/items/edit.html.erb within layouts/admin
+  [1m[36mCate Load (0.4ms)[0m  [1m[34mSELECT `cates`.* FROM `cates`[0m
+  Rendered dashboard/admin/items/edit.html.erb within layouts/admin (95.1ms)
+Completed 200 OK in 129ms (Views: 110.0ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/dashboard/admin/items/100/edit" for ::1 at 2016-10-17 17:22:48 -0400
+Processing by Dashboard::Admin::ItemsController#edit as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mManager Load (0.4ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  Rendering dashboard/admin/items/edit.html.erb within layouts/admin
+  [1m[36mCate Load (0.4ms)[0m  [1m[34mSELECT `cates`.* FROM `cates`[0m
+  Rendered dashboard/admin/items/edit.html.erb within layouts/admin (3.0ms)
+Completed 200 OK in 40ms (Views: 33.7ms | ActiveRecord: 1.2ms)
+
+
+Started PATCH "/dashboard/admin/items/100" for ::1 at 2016-10-17 17:22:57 -0400
+Processing by Dashboard::Admin::ItemsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TWKJA5OxCjSfO9KUfBM2Sr2hsEaTZEdNuHT9picZq8utvMX6i/j2r+CP1xhIF6cD920OeogNjjiwxVWxe64eaA==", "item"=>{"name"=>"Incredible Cotton Shirt", "price"=>"145", "cate_id"=>"2"}, "id"=>"100"}
+  [1m[36mManager Load (0.5ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCate Load (0.4ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/dashboard/admin/items
+Completed 302 Found in 76ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 17:22:57 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (0.3ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.3ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  `cates`.* FROM `cates` WHERE `cates`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (37.8ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 61ms (Views: 55.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/dashboard/admin/items" for ::1 at 2016-10-17 17:27:52 -0400
+Processing by Dashboard::Admin::ItemsController#index as HTML
+  [1m[36mManager Load (1.3ms)[0m  [1m[34mSELECT  `managers`.* FROM `managers` WHERE `managers`.`id` = 1 ORDER BY `managers`.`id` ASC LIMIT 1[0m
+  Rendering dashboard/admin/items/index.html.erb within layouts/admin
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT  `items`.* FROM `items` LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.3ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered dashboard/admin/items/index.html.erb within layouts/admin (96.2ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 164ms (Views: 136.3ms | ActiveRecord: 4.2ms)
+
+

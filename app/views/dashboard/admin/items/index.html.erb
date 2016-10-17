@@ -6,6 +6,7 @@
   <thead>
     <tr>
       <th>ID</th>
+      <th>Category</th>
       <th>Picture</th>
       <th>Name</th>
       <th>Price</th>
@@ -17,6 +18,7 @@
     <% @items.each do |item| %>
       <tr>
         <td><%= item.id %></td>
+        <td><%= item.cate.name %></td>
         <td><%= image_tag item.cover.url(:icon) , :width => 150 , :height => 150 %></td>
         <td><%= item.name %></td>
         <td><%= item.price %></td>

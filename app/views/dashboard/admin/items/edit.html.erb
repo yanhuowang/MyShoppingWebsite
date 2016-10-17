@@ -4,6 +4,9 @@
 	Name <%= f.text_field :name %><br/>
 	Price <%= f.number_field :price %><br/>
 	Picture <%= f.file_field :cover %><br/>
+
+	Category <%= f.select :cate_id , Cate.all.map{|c|[c.name , c.id]} %><br/>
+
 	<button type="submit">Submit</button>
 <% end %>
 
