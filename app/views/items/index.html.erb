@@ -1,20 +1,35 @@
 <p id="notice"><%= notice %></p>
 
+<% content_for :header do %>
+  <script>
+    jQuery(function($){
+     $('.add_cart').click(function(){
+       $.getJSON('/items/' + $(this).attr('data-value') + '/add_cart', function(json){
+        $('#cart_counter').html(json.counter);
+      });
+      return false;
+     });
+    })
+  </script>
+<% end %>
+
 <h1>Items</h1>
 
 <table>
   <thead>
     <tr>
-      <th colspan="3"></th>
+      <th>Picture</th>
+      <th>Name</th>
+      <th>Manage</th>  
     </tr>
   </thead>
 
   <tbody>
     <% @items.each do |item| %>
       <tr>
-        <td><%= link_to 'Show', item %></td>
-        <td><%= link_to 'Edit', edit_item_path(item) %></td>
-        <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= image_tag item.cover.url(:icon)%></td>
+        <td><%= item.name %>(<%= item.price %>)</td>
+        <td><a href="#" class="add_cart" data-value="<%= item.id %>">Add To Cart</a></td>
       </tr>
     <% end %>
   </tbody>

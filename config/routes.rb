@@ -1,26 +1,34 @@
 Rails.application.routes.draw do
-  resources :cates
-  resources :items
-  devise_for :managers
-  devise_for :users
-	root "items#index"
+  	resources :cates
 
-	resources :items , :only => [:index , :show]
+ 	resources :items do
+ 		member do
+ 			get :add_cart
+ 		end
+ 		# collection do
+ 		# end
+  	end
 
-	namespace :dashboard do
+  	devise_for :managers
+  	devise_for :users
+		root "items#index"
 
-		resources :orders
+		resources :items , :only => [:index , :show]
 
-		namespace :admin do
-			resources :items
-			resources :cates
+		namespace :dashboard do
+
 			resources :orders
 
-			resources :users
-			resources :managers
-		end
+			namespace :admin do
+				resources :items
+				resources :cates
+				resources :orders
 
-	end
+				resources :users
+				resources :managers
+			end
+
+		end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

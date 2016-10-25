@@ -4470,3 +4470,439 @@ Processing by Dashboard::Admin::ItemsController#index as HTML
 Completed 200 OK in 164ms (Views: 136.3ms | ActiveRecord: 4.2ms)
 
 
+Started GET "/" for ::1 at 2016-10-25 16:15:41 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (26.4ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (2.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.8ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (124.7ms)
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 1489ms (Views: 1443.3ms | ActiveRecord: 17.4ms)
+
+
+Started GET "/items/100" for ::1 at 2016-10-25 16:15:49 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 30ms (Views: 23.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-10-25 16:16:26 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (3.1ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.2ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (109.8ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 1291ms (Views: 1259.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for ::1 at 2016-10-25 16:16:29 -0400
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (9.5ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (2.0ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (23.2ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 49ms (Views: 35.8ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/items/100" for ::1 at 2016-10-25 16:16:31 -0400
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"100"}
+  [1m[36mItem Load (1.8ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 LIMIT 1[0m
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 59ms (Views: 41.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/items" for ::1 at 2016-10-25 16:16:35 -0400
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.3ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (9.5ms)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 34ms (Views: 30.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/items" for ::1 at 2016-10-25 16:26:48 -0400
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.3ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (26.9ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 80ms (Views: 70.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/items" for ::1 at 2016-10-25 16:48:30 -0400
+  
+SyntaxError (/Users/yanhuo/Desktop/ShopWeb/app/helpers/application_helper.rb:8: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/helpers/application_helper.rb:8: syntax error, unexpected end-of-input, expecting keyword_end
+app/controllers/application_controller.rb:1:in `<top (required)>'
+app/controllers/items_controller.rb:1:in `<top (required)>'
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.9ms)
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.4ms)
+Started GET "/items" for ::1 at 2016-10-25 16:49:01 -0400
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.3ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (24.2ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 75ms (Views: 66.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/items" for ::1 at 2016-10-25 16:51:26 -0400
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.3ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (22.9ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 61ms (Views: 54.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items" for ::1 at 2016-10-25 17:07:52 -0400
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.3ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (8.9ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 35ms (Views: 31.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items" for ::1 at 2016-10-25 17:08:03 -0400
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.3ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (80.4ms)
+Completed 500 Internal Server Error in 87ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `coutnet_for' for #<#<Class:0x007feadab1e578>:0x007fead243f138>):
+    1: <p id="notice"><%= notice %></p>
+    2: 
+    3: <% coutnet_for :header do %>
+    4:   <script>
+    5:     jQuery(function($){
+    6:       $('.add_cart').click(function() {
+  
+app/views/items/index.html.erb:3:in `_app_views_items_index_html_erb___246273067546958396_70323263372900'
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.0ms)
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendering /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/yanhuo/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (70.4ms)
+Started GET "/items" for ::1 at 2016-10-25 17:09:21 -0400
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.4ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (12.3ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 48ms (Views: 44.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/items" for ::1 at 2016-10-25 17:29:48 -0400
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.9ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.7ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (45.5ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 150ms (Views: 136.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/items/100/add_cart" for ::1 at 2016-10-25 17:29:53 -0400
+Processing by ItemsController#add_cart as JSON
+  Parameters: {"id"=>"100"}
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 ORDER BY `items`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/items/100/add_cart" for ::1 at 2016-10-25 17:29:55 -0400
+Processing by ItemsController#add_cart as JSON
+  Parameters: {"id"=>"100"}
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 ORDER BY `items`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items/100/add_cart" for ::1 at 2016-10-25 17:29:58 -0400
+Processing by ItemsController#add_cart as JSON
+  Parameters: {"id"=>"100"}
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 ORDER BY `items`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/items/100/add_cart" for ::1 at 2016-10-25 17:30:01 -0400
+Processing by ItemsController#add_cart as JSON
+  Parameters: {"id"=>"100"}
+  [1m[36mItem Load (9.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 ORDER BY `items`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/items/100/add_cart" for ::1 at 2016-10-25 17:30:03 -0400
+Processing by ItemsController#add_cart as JSON
+  Parameters: {"id"=>"100"}
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 ORDER BY `items`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/items/100/add_cart" for ::1 at 2016-10-25 17:30:04 -0400
+Processing by ItemsController#add_cart as JSON
+  Parameters: {"id"=>"100"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 ORDER BY `items`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items/100/add_cart" for ::1 at 2016-10-25 17:30:06 -0400
+Processing by ItemsController#add_cart as JSON
+  Parameters: {"id"=>"100"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 ORDER BY `items`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for ::1 at 2016-10-25 17:30:08 -0400
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.3ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (16.3ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 70ms (Views: 66.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/items" for ::1 at 2016-10-25 17:30:11 -0400
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.4ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (10.2ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 35ms (Views: 32.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/items" for ::1 at 2016-10-25 17:30:13 -0400
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.4ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (9.9ms)
+  [1m[35m (10.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 43ms (Views: 30.0ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/items/100/add_cart" for ::1 at 2016-10-25 17:30:15 -0400
+Processing by ItemsController#add_cart as JSON
+  Parameters: {"id"=>"100"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 ORDER BY `items`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items/100/add_cart" for ::1 at 2016-10-25 17:30:17 -0400
+Processing by ItemsController#add_cart as JSON
+  Parameters: {"id"=>"100"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 ORDER BY `items`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for ::1 at 2016-10-25 17:30:21 -0400
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.3ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (9.5ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 35ms (Views: 32.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/items/99/add_cart" for ::1 at 2016-10-25 17:30:31 -0400
+Processing by ItemsController#add_cart as JSON
+  Parameters: {"id"=>"99"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 99 ORDER BY `items`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items/98/add_cart" for ::1 at 2016-10-25 17:30:35 -0400
+Processing by ItemsController#add_cart as JSON
+  Parameters: {"id"=>"98"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 98 ORDER BY `items`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for ::1 at 2016-10-25 17:30:37 -0400
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.2ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (9.5ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 37ms (Views: 34.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/items/100/add_cart" for ::1 at 2016-10-25 17:30:41 -0400
+Processing by ItemsController#add_cart as JSON
+  Parameters: {"id"=>"100"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 ORDER BY `items`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items/100/add_cart" for ::1 at 2016-10-25 17:30:43 -0400
+Processing by ItemsController#add_cart as JSON
+  Parameters: {"id"=>"100"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 ORDER BY `items`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items/98/add_cart" for ::1 at 2016-10-25 17:31:03 -0400
+Processing by ItemsController#add_cart as JSON
+  Parameters: {"id"=>"98"}
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 98 ORDER BY `items`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/items" for ::1 at 2016-10-25 17:31:14 -0400
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.2ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (8.9ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 36ms (Views: 33.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/items" for ::1 at 2016-10-25 17:34:25 -0400
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (1.8ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (1.7ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (15.1ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 66ms (Views: 59.6ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/items" for ::1 at 2016-10-25 17:38:13 -0400
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.3ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (43.9ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 90ms (Views: 74.0ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/items/100/add_cart" for ::1 at 2016-10-25 17:38:16 -0400
+Processing by ItemsController#add_cart as JSON
+  Parameters: {"id"=>"100"}
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 ORDER BY `items`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items/100/add_cart" for ::1 at 2016-10-25 17:38:21 -0400
+Processing by ItemsController#add_cart as JSON
+  Parameters: {"id"=>"100"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 ORDER BY `items`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items/100/add_cart" for ::1 at 2016-10-25 17:38:22 -0400
+Processing by ItemsController#add_cart as JSON
+  Parameters: {"id"=>"100"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 ORDER BY `items`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items/100/add_cart" for ::1 at 2016-10-25 17:38:23 -0400
+Processing by ItemsController#add_cart as JSON
+  Parameters: {"id"=>"100"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 ORDER BY `items`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items/100/add_cart" for ::1 at 2016-10-25 17:38:23 -0400
+Processing by ItemsController#add_cart as JSON
+  Parameters: {"id"=>"100"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 ORDER BY `items`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items/96/add_cart" for ::1 at 2016-10-25 17:38:27 -0400
+Processing by ItemsController#add_cart as JSON
+  Parameters: {"id"=>"96"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 96 ORDER BY `items`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for ::1 at 2016-10-25 17:38:32 -0400
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.3ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (13.1ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 50ms (Views: 46.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/items/100/add_cart" for ::1 at 2016-10-25 17:38:36 -0400
+Processing by ItemsController#add_cart as JSON
+  Parameters: {"id"=>"100"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 ORDER BY `items`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for ::1 at 2016-10-25 17:39:52 -0400
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.3ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (25.8ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 67ms (Views: 60.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items" for ::1 at 2016-10-25 17:39:57 -0400
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.2ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (45.8ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 77ms (Views: 69.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/items/100/add_cart" for ::1 at 2016-10-25 17:40:02 -0400
+Processing by ItemsController#add_cart as JSON
+  Parameters: {"id"=>"100"}
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` WHERE `items`.`id` = 100 ORDER BY `items`.`id` ASC LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for ::1 at 2016-10-25 17:40:05 -0400
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.3ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (8.4ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 31ms (Views: 28.1ms | ActiveRecord: 0.9ms)
+
+
