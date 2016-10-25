@@ -1,6 +1,8 @@
 class ItemsController < ApplicationController
 
   def add_cart
+    # use session: if logout, the cart info will be lost
+    # if do not want to lose, use db
     session[:cart] ||= {}
     item = Item.where(:id => params[:id]).first
     if item
