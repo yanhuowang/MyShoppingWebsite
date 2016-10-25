@@ -4906,3 +4906,113 @@ Processing by ItemsController#index as HTML
 Completed 200 OK in 31ms (Views: 28.1ms | ActiveRecord: 0.9ms)
 
 
+Started GET "/items" for ::1 at 2016-10-25 17:50:36 -0400
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.3ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (10.0ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 54ms (Views: 49.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items" for ::1 at 2016-10-25 17:54:31 -0400
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.4ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (12.9ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 55ms (Views: 51.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/items" for ::1 at 2016-10-25 17:55:42 -0400
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.5ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (15.2ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 47ms (Views: 43.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/items" for ::1 at 2016-10-25 17:55:45 -0400
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.3ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (10.2ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 37ms (Views: 34.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items" for ::1 at 2016-10-25 17:56:05 -0400
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.4ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (13.8ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 43ms (Views: 38.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/items" for ::1 at 2016-10-25 17:58:42 -0400
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.4ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (14.5ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 50ms (Views: 46.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/items" for ::1 at 2016-10-25 17:59:00 -0400
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.3ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (13.3ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 51ms (Views: 46.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items" for ::1 at 2016-10-25 17:59:55 -0400
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.2ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (10.1ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 49ms (Views: 46.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/items" for ::1 at 2016-10-25 18:00:51 -0400
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.3ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (15.7ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 41ms (Views: 37.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/items" for ::1 at 2016-10-25 18:01:16 -0400
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.3ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (9.0ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 33ms (Views: 30.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/items" for ::1 at 2016-10-25 18:01:20 -0400
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT  `items`.* FROM `items` ORDER BY id DESC LIMIT 30 OFFSET 0[0m
+  [1m[36mCate Load (0.3ms)[0m  [1m[34mSELECT `cates`.* FROM `cates` WHERE `cates`.`id` = 2[0m
+  Rendered items/index.html.erb within layouts/application (10.2ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `items`[0m
+Completed 200 OK in 47ms (Views: 43.5ms | ActiveRecord: 0.9ms)
+
+
