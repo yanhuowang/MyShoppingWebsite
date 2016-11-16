@@ -2,6 +2,8 @@
 ## Overview
 This is a mini version of online shopping website. Users can view item list, view item in details, add items to the cart, etz. Managers can add items to the list, update item information, delete items, etz.
 
+## Techniques involved: Ruby on Rails, MySql, HTML, CSS, JavaScript
+
 ### Ruby on Rails framework:
  - It is open source, so it is free and easy to learn.
  - It has a large pool of open source libraries to enhance our product.
